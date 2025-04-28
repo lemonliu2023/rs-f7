@@ -1,6 +1,7 @@
 import { App, Link, Navbar, Page, Toolbar, View } from 'framework7-react';
 import './App.css';
 import AboutPage from './pages/About/about';
+import Action from './pages/Action';
 
 const AppMain = () => {
   return (
@@ -11,6 +12,10 @@ const AppMain = () => {
         {
           path: '/about',
           component: AboutPage,
+        },
+        {
+          path: '/action',
+          component: Action,
         },
       ]}
     >
@@ -23,7 +28,7 @@ const AppMain = () => {
           {/* Toolbar */}
           <Toolbar bottom>
             <Link href="/about">Link 1</Link>
-            <Link>Link 2</Link>
+            <Link href="/action">Link 2</Link>
           </Toolbar>
           {/* Page Content */}
           <p>Page content goes here</p>

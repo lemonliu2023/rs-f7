@@ -11,9 +11,10 @@ import Framework7 from 'framework7/lite-bundle';
 
 // Import Framework7 React
 import Framework7React from 'framework7-react';
+import ActionsComponent from 'framework7/components/actions';
 
 // Init plugin
-Framework7.use(Framework7React);
+Framework7.use([Framework7React, ActionsComponent]);
 
 const rootEl = document.getElementById('root');
 if (rootEl) {
